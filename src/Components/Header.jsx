@@ -1,6 +1,6 @@
 function Header() {
   return (
-        <div className="absolute w-full text-white z-10 bg-darkbg border-b border-white border-opacity-50" >
+        <div className="absolute  w-full text-white z-10 bg-darkbg border-b border-white border-opacity-10" >
             <div  className="px-10 py-5 relative">
                 <header className="flex justify-between" >
                     <h3 className="text-4xl text-white font-bold" ><a href="#">mrk.dev</a></h3>
