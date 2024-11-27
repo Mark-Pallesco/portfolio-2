@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main#info::before {
+    content: ''; /* Necessary to display the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(3, 7, 18, 0.5) 80%, rgba(3, 7, 18, 1) 95%);
+    z-index: 1; /* Places the overlay above the content */
+  }
