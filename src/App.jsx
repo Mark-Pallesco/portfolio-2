@@ -1,5 +1,5 @@
 import Header from "./Components/Header";
-import logo from './assets/mrk-logo-white.png';
+import logo from './assets/home-banner (2).png';
 
 export default function App() {
 
@@ -7,14 +7,11 @@ export default function App() {
 
 
   return (
-    <div className="bg-darkbg">
+    <div className="bg-blue-950">
       <Header />
 
-      <main
-        className="w-full h-screen flex justify-center items-center bg-grid-gray-500 bg-grid-8"
-        id="info"
-      >
-        <section className="text-white gap-4 flex flex-row-reverse items-center w-full z-10 px-10">
+      <main className="w-full h-screen flex justify-center items-center  "id="info">
+        <section className=" flex con mr-auto ml-auto relative">
           <div className="text-white w-full gap-4 flex flex-col items-center">
             <h3 className="font-sans text-2xl sm:text-xl">Lorem, ipsum.</h3>
             <h1 className="font-bold text-5xl md:text-4xl sm:text-3xl">{name}</h1>
@@ -25,22 +22,10 @@ export default function App() {
           </div>
 
           <div className="text-white w-full gap-4 flex flex-col items-center">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="w-8/10" />
           </div>
         </section>
       </main>
-
-      {/* About Section */}
-      <div id="about" className="w-full">
-        <div className="text-white px-10">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi autem
-            obcaecati corporis minus, facilis perferendis suscipit quibusdam
-            sit? Autem, repudiandae?
-          </p>
-          <h2 className="text-2xl font-bold mt-4">{name}</h2>
-        </div>
-      </div>
     </div>
   );
 }
