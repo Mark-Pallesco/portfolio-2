@@ -1,19 +1,10 @@
 import Header from "./Components/Header";
-import { useState } from "react";
 import logo from './assets/mrk-logo-white.png';
 
 export default function App() {
-  const [name, setName] = useState("Lorem Lorem");
-  const [inputValue, setInputValue] = useState("");
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
-  };
 
-  const updateName = () => {
-    setName(inputValue);
-    setInputValue("");
-  };
+
 
   return (
     <div className="bg-darkbg">
