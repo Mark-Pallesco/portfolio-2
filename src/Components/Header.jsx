@@ -32,9 +32,9 @@ function Header() {
           {/* Navigation - hidden on mobile */}
           <nav className="hidden md:block">
             <ul className="flex gap-4 font-montserrat">
-              <li className="p-2 font-medium"><a href="#home">HOMES</a></li>
-              <li className="p-2 font-medium"><a href="#about">SERVICES</a></li>
-              <li className="p-2 font-medium"><a href="#services">EXPERIENCE</a></li>
+              <li className="p-2 font-medium"><a href="#banner">HOMES</a></li>
+              <li className="p-2 font-medium"><a href="#services">SERVICES</a></li>
+              <li className="p-2 font-medium"><a href="#experience">EXPERIENCE</a></li>
               <li className="p-2 font-medium"><a href="#portfolio">PORTFOLIO</a></li>
               <li className="p-2 font-medium"><a href="#contact">CONTACT</a></li>
             </ul>
