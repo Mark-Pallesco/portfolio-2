@@ -4,9 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom font class for Montserrat */
-@layer base {
-  .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
-  }
+/* index.css */
+body {
+  @apply font-montserrat;
 }

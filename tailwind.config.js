@@ -1,7 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
-
-
 export default {
   content: [
     "./index.html",
@@ -11,9 +8,11 @@ export default {
     extend: {
       colors: {
         darkbg: '#030712',
-        customGreen: '#37715d', // added your custom green
+        customGreen: '#37715d',
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], // ✅ Added Montserrat
       },
     },
   },
-  
 };
