@@ -35,7 +35,7 @@ export default function Services() {
               <p className="text-sm">Years of Experience</p>
             </div>
             <div className="bg-purple-100 px-6 py-4 rounded-md text-center">
-              <p className="text-2xl font-bold">100+</p>
+              <p className="text-2xl font-bold">80+</p>
               <p className="text-sm">Total Projects</p>
             </div>
             <div className="bg-green-100 px-6 py-4 rounded-md text-center">

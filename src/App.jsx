@@ -1,6 +1,6 @@
-import Header from "./components/header";
 import Banner from "./sections/banner";
 import Services from "./sections/services";
+import Header from "./components/Header"; 
 
 export default function App() {
   return (
