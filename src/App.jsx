@@ -1,6 +1,9 @@
 import Banner from "./sections/Banner";
 import Services from "./sections/Services";
 import Header from "./Components/Header";
+import Experience from "./sections/Experience";
+import Portfolio from "./sections/Portfolio";
+import Contact from "./sections/Contact";
 
 
 export default function App() {
@@ -9,8 +12,10 @@ export default function App() {
       <Header />
       <main id="page">
         <Banner />
-        <h2>why</h2>
         <Services />
+        <Experience />
+        <Portfolio />
+        <Contact />
       </main>
     </div>
   );
