@@ -3,17 +3,20 @@ export default function Experience() {
     {
       date: 'Nov 2023 - Present',
       title: 'Web Developer',
-      description: 'I use WordPress and various website builders to create designs that are both visually appealing and user-friendly.',
+      description:
+        'I use WordPress and various website builders to create designs that are both visually appealing and user-friendly.',
     },
     {
       date: 'Oct 2023 - Nov 2023',
       title: 'Full Stack Web Developer',
-      description: 'Developed an eCommerce platform using the MERN stack, integrating features for product management, user authentication, and secure payment processing to deliver a seamless online shopping experience.',
+      description:
+        'Developed an eCommerce platform using the MERN stack, integrating features for product management, user authentication, and secure payment processing to deliver a seamless online shopping experience.',
     },
     {
       date: 'March 2023 - June 2023',
       title: 'Web Developer (React.js) Intern',
-      description: 'Collaborated with a team of developers and designers to create dynamic and responsive web applications using React.js, contributing to the enhancement of user experience and interface design',
+      description:
+        'Collaborated with a team of developers and designers to create dynamic and responsive web applications using React.js, contributing to the enhancement of user experience and interface design',
     },
   ];
 
@@ -28,37 +31,41 @@ export default function Experience() {
             EXPERIENCE THAT SHAPES MY WORK
           </h2>
         </div>
+
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-600 h-full"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-600 h-full"></div>
 
           {experiences.map((experience, index) => {
             const isLeft = index % 2 === 0;
             return (
               <div
                 key={index}
-                className={`mb-8 flex w-full ${isLeft ? 'justify-start' : 'justify-end'}`}
+                className={`mb-8 flex w-full ${
+                  isLeft ? 'justify-start' : 'justify-end'
+                } md:flex-row flex-col items-center`}
               >
                 <div
-                  className={`relative w-1/2 ${isLeft ? 'pr-16' : 'pl-16'}`}
+                  className={`relative md:w-1/2 w-full ${
+                    isLeft ? 'md:pr-16' : 'md:pl-16'
+                  }`}
                 >
                   <div
                     className={`relative p-6 bg-[#333] border border-gray-600 rounded-lg shadow-lg text-white ${
-                      isLeft ? 'text-right' : 'text-left'
+                      isLeft ? 'md:text-right text-left' : 'text-left'
                     }`}
                   >
-                    <p className="text-sm text-yellow-400 mb-1">{experience.date}</p>
-                    <h3 className="text-xl font-bold mb-1">{experience.title}</h3>
-
-                    <div
-                      className={`flex ${isLeft ? 'justify-end' : 'justify-start'}`}
-                    >
-                      <span className="text-gray-300">{experience.description}</span>
-                    </div>
+                    <p className="text-sm text-yellow-400 mb-1">
+                      {experience.date}
+                    </p>
+                    <h3 className="text-xl font-bold mb-1">
+                      {experience.title}
+                    </h3>
+                    <p className="text-gray-300">{experience.description}</p>
 
                     {/* Timeline dot */}
                     <div
-                      className={`absolute top-1/2 w-6 h-6 bg-[#121212] border border-gray-600 rounded-full transform -translate-y-1/2 flex items-center justify-center ${
+                      className={`hidden md:flex absolute top-1/2 w-6 h-6 bg-[#121212] border border-gray-600 rounded-full transform -translate-y-1/2 items-center justify-center ${
                         isLeft
                           ? 'right-0 translate-x-1/2'
                           : 'left-0 -translate-x-1/2'

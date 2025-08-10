@@ -29,7 +29,7 @@ export default function Services() {
           ))}
 
           {/* Stats */}
-          <div className="flex flex-wrap gap-4 mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             <div className="bg-yellow-100 px-6 py-4 rounded-md text-center">
               <p className="text-2xl font-bold">2+</p>
               <p className="text-sm">Years of Experience</p>
