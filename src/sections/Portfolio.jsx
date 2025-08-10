@@ -41,13 +41,13 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="bg-white py-20 px-5 lg:px-10">
       <div className="max-w-[1440px] mx-auto px-5 lg:px-10">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start  mb-16">
           <div className="mb-8 lg:mb-0 lg:w-1/2">
-            <p className="text-gray-600 uppercase tracking-widest font-semibold text-sm">
+            <p className="text-green-700 uppercase tracking-widest font-medium">
               PORTFOLIO
             </p>
-            <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-              WHERE IDEAS MEET EXECUTION
+            <h2 className="text-4xl font-bold uppercase text-gray-900 leading-tight">
+              My Recent Work
             </h2>
           </div>
           <div className="lg:w-1/2 lg:pl-10 text-gray-500">

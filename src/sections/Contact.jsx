@@ -11,7 +11,7 @@ function Contact() {
         
         {/* Illustration */}
         <div className='w-full'>
-          <img src={footerImg} alt="Contact Illustration" className="w-full max-w-lg mx-auto" />
+          <img src={footerImg} alt="Contact Illustration" className="w-full  mx-auto" />
         </div>
         
         {/* Contact Information */}
