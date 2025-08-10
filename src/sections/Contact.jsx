@@ -6,7 +6,7 @@ import footerImg from '../assets/Social-networking-cuate.png';
 
 function Contact() {
   return (
-    <section className="bg-[#121212] py-10">
+    <section id='contact' className="bg-[#121212] py-10">
       <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row items-center">
         
         {/* Illustration */}
