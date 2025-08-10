@@ -5,11 +5,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
+      setIsFixed(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,10 +36,13 @@ function Header() {
             </ul>
           </nav>
 
-          {/* Button */}
-          <button className="bg-customGreen py-3 px-6 rounded-md font-montserrat">
-            Download CV
-          </button>
+          {/* Get in Touch Button */}
+          <a
+            href="mailto:angelomark31@gmail.com"
+            className="bg-customGreen py-3 px-6 rounded-md font-montserrat"
+          >
+            Get in Touch
+          </a>
         </header>
       </div>
     </div>

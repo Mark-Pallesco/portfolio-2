@@ -58,9 +58,13 @@ export default function Banner() {
             Let us bring your vision to life with a website that works as hard as you do!
           </p>
 
-          <button className="bg-customGreen w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat">
-            Download CV
-          </button>
+          {/* Get in Touch Button */}
+          <a
+            href="mailto:angelomark31@gmail.com"
+            className="bg-customGreen w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat text-center"
+          >
+            Get in Touch
+          </a>
 
           {/* Icons */}
           <div className="icons text-white pt-4 lg:pt-40">
