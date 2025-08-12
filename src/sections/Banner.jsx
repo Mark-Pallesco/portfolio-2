@@ -67,7 +67,7 @@ export default function Banner() {
             href="mailto:angelomark31@gmail.com"
             className="bg-customGreen w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat text-center transition-all hover:opacity-90"
           >
-            Get in Touch
+            Work With Me
           </a>
 
           {/* Icons */}

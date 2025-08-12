@@ -58,9 +58,9 @@ export default function Portfolio() {
             </p>
             <a
               href="mailto:angelomark31@gmail.com"
-              className="bg-customGreen text-white w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat text-center"
+              className="bg-customGreen text-white mt-2 w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat text-center"
             >
-              Get in Touch
+              Contact Me
             </a>
           </div>
         </div>
