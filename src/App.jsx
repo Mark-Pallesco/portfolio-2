@@ -14,7 +14,7 @@ export default function App() {
         <Banner />
         <Services />
         <Experience />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Contact />
       </main>
     </div>

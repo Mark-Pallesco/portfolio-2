@@ -48,7 +48,7 @@ export default function Banner() {
         {/* Left Column - Text */}
         <div className="text-white w-full gap-4 justify-center flex flex-col order-2 lg:order-1 text-center lg:text-left">
           <p className="text-sm sm:text-md uppercase font-montserrat">
-            👋 Hi There? <span className="text-yellow-400">I’m Mark</span>
+            👋 Hi There? <span className="text-yellow-400">Im Mark</span>
           </p>
 
           <h1 className="font-bold text-3xl sm:text-4xl lg:text-6xl uppercase leading-snug">
