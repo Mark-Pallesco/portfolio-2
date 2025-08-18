@@ -2,7 +2,7 @@ import Banner from "./sections/Banner";
 import Services from "./sections/Services";
 import Header from "./Components/Header";
 import Experience from "./sections/Experience";
-// import Portfolio from "./sections/Portfolio";
+import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 
 
@@ -14,7 +14,7 @@ export default function App() {
         <Banner />
         <Services />
         <Experience />
-        {/* <Portfolio /> */}
+        <Portfolio />
         <Contact />
       </main>
     </div>
