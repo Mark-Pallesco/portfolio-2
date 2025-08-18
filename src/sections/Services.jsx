@@ -39,7 +39,7 @@ export default function Services() {
               <p className="text-sm">Total Projects</p>
             </div>
             <div className="bg-green-100 px-6 py-4 rounded-md text-center">
-              <p className="text-2xl font-bold">50+</p>
+              <p className="text-2xl font-bold">40+</p>
               <p className="text-sm">Happy Clients</p>
             </div>
           </div>
