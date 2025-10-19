@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from '../assets/Coding-bro (1).png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWordpress, faReact, faHtml5, faCss3Alt, faJs } from '@fortawesome/free-brands-svg-icons';
+import { faWordpress, faReact, faHtml5, faCss3Alt, faJs, faWebflow } from '@fortawesome/free-brands-svg-icons';
 
 export default function Banner() {
   const careers = ["Developer", "Designer"];
@@ -75,10 +75,11 @@ export default function Banner() {
             I offer a full suite of WordPress development services <br className="hidden sm:block" /> tailored to meet your unique business needs
             <div className="flex flex-wrap gap-3 mt-3 justify-center lg:justify-start">
               <FontAwesomeIcon icon={faWordpress} className="px-2 py-3 bg-white rounded-md" style={{ color: '#21759B', fontSize: '2rem' }} />
+              <FontAwesomeIcon icon={faWebflow} className="px-2 py-3 bg-white rounded-md" style={{ color: '#264de4', fontSize: '2rem' }} />
               <FontAwesomeIcon icon={faJs} className="px-2 py-3 bg-white rounded-md" style={{ color: '#F7DF1E', fontSize: '2rem' }} />
-              <FontAwesomeIcon icon={faReact} className="px-2 py-3 bg-white rounded-md" style={{ color: '#61DBFB', fontSize: '2rem' }} />
               <FontAwesomeIcon icon={faHtml5} className="px-2 py-3 bg-white rounded-md" style={{ color: '#E44D26', fontSize: '2rem' }} />
               <FontAwesomeIcon icon={faCss3Alt} className="px-2 py-3 bg-white rounded-md" style={{ color: '#264de4', fontSize: '2rem' }} />
+
             </div>
           </div>
         </div>
