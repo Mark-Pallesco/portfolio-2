@@ -33,7 +33,6 @@ function Header() {
               <li className="p-2 font-medium"><a href="#experience">EXPERIENCE</a></li>
               <li className="p-2 font-medium"><a href="#portfolio">PORTFOLIO</a></li>
               <li className="p-2 font-medium"><a href="#contact">CONTACT</a></li>
-              <li className="p-2 font-medium"><a href="/projects">Projects</a></li>
             </ul>
           </nav>
 
