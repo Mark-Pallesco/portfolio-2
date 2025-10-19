@@ -2,106 +2,76 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "The Sales Machine",
       image: "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined-4.png",
-      url: "https://thesalesmachine.com/",
     },
     {
       id: 2,
-      title: "Vegishake",
       image: "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined-1.png",
-      url: "https://www.vegishake.co.uk/",
     },
     {
       id: 3,
-      title: "CleverPays",
       image: "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined-3.png",
-      url: "https://cleverpays.ca/",
     },
     {
       id: 4,
-      title: "LJI Advisory Group",
       image: "https://markpallesco.kesug.com/wp-content/uploads/2025/05/Home-LJI-Advisory-Group.png",
-      url: "https://ljiadvisorygroup.com.au/",
     },
     {
       id: 5,
-      title: "Mike Sarraille",
       image: "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined.png",
-      url: "https://mikesarraille.com/",
     },
     {
       id: 6,
-      title: "Tonkin Law",
       image: "https://markpallesco.kesug.com/wp-content/uploads/2025/05/Family-Lawyers-Melbourne-_-Tonkin-Legal-Group.png",
-      url: "https://www.tonkinlaw.com/",
     },
   ];
 
   return (
     <section id="portfolio" className="bg-white py-20 px-5 lg:px-10">
       <div className="max-w-[1440px] mx-auto px-5 lg:px-10">
-        <div className="flex flex-col lg:flex-row justify-between items-start  mb-16">
-          <div className="mb-8 lg:mb-0 lg:w-1/2">
-            <p className="text-green-700 uppercase tracking-widest font-medium">
-              PORTFOLIO
-            </p>
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
+          <div className="lg:w-1/2">
+            <p className="text-green-700 uppercase tracking-widest font-medium">Portfolio</p>
             <h2 className="text-4xl font-bold uppercase text-gray-900 leading-tight">
               My Recent Work
             </h2>
           </div>
-          <div className="lg:w-1/2 lg:pl-10 text-gray-500">
+          <div className="lg:w-1/2 text-gray-500">
             <p className="mb-4 text-slate-950">
-              Using WordPress and various website builders, I transform designs into
-              visually appealing, user-friendly websites that deliver an optimal user
-              experience while aligning with your project goals.
+              Some of my recent projects are under NDA. Here’s a quick preview of a few
+              works, with permission to display the visuals only.
             </p>
             <a
               href="mailto:angelomark31@gmail.com"
-              className="bg-customGreen text-white mt-2 w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat text-center"
+              className="bg-customGreen text-white mt-4 py-3 px-6 rounded-md font-montserrat text-center inline-block hover:bg-green-800 transition-colors"
             >
               Contact Me
             </a>
           </div>
         </div>
 
-        {/* 3 columns on large, 2 on medium, 1 on small */}
+        {/* Project Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map(({ id, title, image, url }) => (
-            <a
+          {projects.map(({ id, image }) => (
+            <div
               key={id}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200"
+              className="group relative block rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200"
             >
-              <div className="relative w-full h-80 overflow-hidden rounded-t-xl">
+              <div className="relative w-full h-60 overflow-hidden rounded-t-xl">
                 <img
                   src={image}
-                  alt={title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  alt="Project under NDA"
+                  loading="lazy"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
-              </div>
-              <div className="p-6 flex justify-between items-center bg-white rounded-b-xl">
-                <h3 className="text-xl font-bold text-customGreen">{title}</h3>
-                <div className="w-10 h-10 rounded-full border border-customGreen flex items-center justify-center text-customGreen group-hover:text-white group-hover:bg-customGreen transition-colors duration-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <span className="text-white text-2xl font-bold uppercase tracking-wide">
+                    NDA
+                  </span>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

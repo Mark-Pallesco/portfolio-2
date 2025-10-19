@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from '../assets/Coding-bro (1).png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWordpress, faReact, faHtml5, faCss3Alt, faJs, faWebflow } from '@fortawesome/free-brands-svg-icons';
+import { faWordpress, faHtml5, faCss3Alt, faJs, faWebflow } from '@fortawesome/free-brands-svg-icons';
 
 export default function Banner() {
   const careers = ["Developer", "Designer"];

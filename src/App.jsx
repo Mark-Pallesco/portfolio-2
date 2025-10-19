@@ -1,22 +1,16 @@
-import Banner from "./sections/Banner";
-import Services from "./sections/Services";
-import Header from "./Components/Header";
-import Experience from "./sections/Experience";
-import Portfolio from "./sections/Portfolio";
-import Contact from "./sections/Contact";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
 
 export default function App() {
   return (
-    <div className="w-full relative">
-      <Header />
-      <main id="page">
-        <Banner />
-        <Services />
-        <Experience />
-        <Portfolio />
-        <Contact />
-      </main>
-    </div>
+    <Router>
+      <div className="w-full">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
