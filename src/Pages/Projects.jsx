@@ -49,7 +49,7 @@ export default function Projects() {
   return (
     <>
      <Header />
-    <section id="projects" className="bg-white py-20 px-5 lg:px-10">
+    <section id="projects" className="bg-white py-36 px-5 lg:px-10">
       <div className="max-w-[1440px] mx-auto px-5 lg:px-10">
         <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
           <div className="mb-8 lg:mb-0 lg:w-1/2">
