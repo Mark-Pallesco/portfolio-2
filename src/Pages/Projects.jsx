@@ -85,7 +85,7 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="group block rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200"
             >
-              <div className="relative w-full h-80 overflow-hidden rounded-t-xl">
+              <div className="relative w-full h-60 overflow-hidden rounded-t-xl">
                 <img
                   src={image}
                   alt={title}
