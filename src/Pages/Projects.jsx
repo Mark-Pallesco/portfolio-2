@@ -62,7 +62,7 @@ export default function Projects() {
           </div>
           <div className="lg:w-1/2 lg:pl-10 text-gray-500">
             <p className="mb-4 text-slate-950">
-              A collection of client projects I’ve built using WordPress, Webflow,
+              This is a collection of client projects I’ve built using WordPress, Webflow,
               and other CMS platforms. Each site focuses on clean design,
               performance, and user experience.
             </p>
