@@ -5,14 +5,13 @@ export default function Projects() {
     {
       platform: "Keynote Speaker",
       projects: [
-        { name: "Gilbert", url: "https://gilbert.com/" },
-        { name: "Call Me Boo", url: "https://callmeboo.com/" },
-        { name: "Stephen J. Dietrich", url: "https://stephenjdietrich.com/home-v2/" },
         { name: "Mike Sarraille", url: "https://mikesarraille.com/" },
-        { name: "Shelly Slight", url: "https://shellyslight.com/" },
         { name: "Book Joel Steele", url: "https://bookjoelsteele.com/" },
         { name: "Dr. Reza Zahedi", url: "https://drrezazahedi.com/" },
         { name: "Jason Milen", url: "https://jasonmilen.com" },
+        { name: "Gilbert", url: "https://gilbert.com/" },
+        { name: "Call Me Boo", url: "https://callmeboo.com/" },
+        { name: "Stephen J. Dietrich", url: "https://stephenjdietrich.com/home-v2/" },
       ],
     },
 
@@ -20,6 +19,7 @@ export default function Projects() {
       platform: "WordPress Projects",
       projects: [
         { name: "Vegishake", url: "https://www.vegishake.co.uk/" },
+        { name: "Industry Leadr", url: "https://industryleadr.com/" },
         { name: "Seventeahouse", url: "https://seventeahouse.com/" },
         { name: "Terraxy", url: "https://terraxy.com/" },
         { name: "Made Creative Co", url: "https://madecreativeco.com.au/" },
