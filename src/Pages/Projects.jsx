@@ -1,123 +1,110 @@
 import Header from "../Components/Header";
 
 export default function Projects() {
-  const projects = [
+  const projectGroups = [
     {
-      id: 1,
-      title: "The Sales Machine",
-      image:
-        "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined-4.png",
-      url: "https://thesalesmachine.com/",
+      platform: "Keynote Speaker",
+      projects: [
+        { name: "Gilbert", url: "https://gilbert.com/" },
+        { name: "Call Me Boo", url: "https://callmeboo.com/" },
+        { name: "Stephen J. Dietrich", url: "https://stephenjdietrich.com/home-v2/" },
+        { name: "Mike Sarraille", url: "https://mikesarraille.com/" },
+        { name: "Shelly Slight", url: "https://shellyslight.com/" },
+        { name: "Book Joel Steele", url: "https://bookjoelsteele.com/" },
+        { name: "Dr. Reza Zahedi", url: "https://drrezazahedi.com/" },
+        { name: "Jason Milen", url: "https://jasonmilen.com" },
+      ],
     },
+
     {
-      id: 2,
-      title: "Vegishake",
-      image:
-        "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined-1.png",
-      url: "https://www.vegishake.co.uk/",
+      platform: "WordPress Projects",
+      projects: [
+        { name: "Vegishake", url: "https://www.vegishake.co.uk/" },
+        { name: "Seventeahouse", url: "https://seventeahouse.com/" },
+        { name: "Terraxy", url: "https://terraxy.com/" },
+        { name: "Made Creative Co", url: "https://madecreativeco.com.au/" },
+        { name: "Rise Up London", url: "https://riseuplondon.com/" },
+        { name: "Go Tours Hawaii", url: "https://gotourshawaii.com/" },
+        { name: "UDO Systems", url: "https://udosystems.com/" },
+        { name: "Northbase PCS", url: "https://pcs.northbase.io/" },
+        { name: "D55", url: "https://d55.fe4.myftpupload.com/" },
+        { name: "CleverPays", url: "https://cleverpays.ca/" },
+        { name: "Canadian Cigarettes", url: "https://canadiancigarettes.co/" },
+        { name: "UrbanScape SEO", url: "https://urbanscapeseo.com/" },
+        { name: "EcomXF", url: "https://ecomxf.com/" },
+        { name: "Michael Meyer Law (LP)", url: "https://lp.michaelmeyerlaw.com/" },
+        { name: "Kandy Kingdom", url: "https://kandykingdom.com.au/" },
+        { name: "Amritsari Chatore", url: "https://amritsarichatore.ca/" },
+        { name: "Tonkin Law", url: "https://www.tonkinlaw.com/" },
+        { name: "Dev Wigs", url: "https://www.devwigs.com/" },
+        { name: "LJI Advisory Group", url: "https://ljiadvisorygroup.com.au/" },
+        { name: "Impact USA Advisory", url: "https://impactusadvisory.com/" },
+        { name: "Industry LeadR", url: "https://industryleadr.com/" },
+      ],
     },
+
     {
-      id: 3,
-      title: "CleverPays",
-      image:
-        "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined-3.png",
-      url: "https://cleverpays.ca/",
+      platform: "Webflow Projects",
+      projects: [
+        { name: "Urbanavas", url: "https://urbanavas-v2.webflow.io/" },
+        { name: "Circle Properties", url: "https://www.circleprop.ca/" },
+        { name: "PowerSync", url: "https://powersync-com-au.webflow.io/" },
+        { name: "Artbook", url: "https://artbook-f9247d.webflow.io/" },
+        { name: "Hans", url: "https://hans-cb88e8.webflow.io/" },
+        { name: "Shoe Care", url: "https://shoe-care-0.webflow.io/" },
+        { name: "Bloem", url: "https://bloem-8c7ebb.webflow.io/" },
+      ],
     },
+
     {
-      id: 4,
-      title: "LJI Advisory Group",
-      image:
-        "https://markpallesco.kesug.com/wp-content/uploads/2025/05/Home-LJI-Advisory-Group.png",
-      url: "https://ljiadvisorygroup.com.au/",
+      platform: "Framer Projects",
+      projects: [
+        { name: "Filtr", url: "https://www.filtr.review/" },
+        { name: "Practical Darling", url: "https://practical-darling-065877.framer.app/" },
+        { name: "Cultural Steps", url: "https://cultural-steps-203643.framer.app/" },
+      ],
     },
+
     {
-      id: 5,
-      title: "Mike Sarraille",
-      image:
-        "https://markpallesco.kesug.com/wp-content/uploads/2025/05/undefined.png",
-      url: "https://mikesarraille.com/",
-    },
-    {
-      id: 6,
-      title: "Tonkin Law",
-      image:
-        "https://markpallesco.kesug.com/wp-content/uploads/2025/05/Family-Lawyers-Melbourne-_-Tonkin-Legal-Group.png",
-      url: "https://www.tonkinlaw.com/",
+      platform: "Squarespace Project",
+      projects: [
+        { name: "Jill Schulman", url: "https://www.jillschulman.com/" },
+      ],
     },
   ];
 
   return (
     <>
-     <Header />
-    <section id="projects" className="bg-white py-36 px-5 lg:px-10">
-      <div className="max-w-[1440px] mx-auto px-5 lg:px-10">
-        <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
-          <div className="mb-8 lg:mb-0 lg:w-1/2">
-            <p className="text-green-700 uppercase tracking-widest font-medium">
-              PROJECTS
-            </p>
-            <h2 className="text-4xl font-bold uppercase text-gray-900 leading-tight">
-              My Portfolio Work
-            </h2>
-          </div>
-          <div className="lg:w-1/2 lg:pl-10 text-gray-500">
-            <p className="mb-4 text-slate-950">
-              This is a collection of client projects I’ve built using WordPress, Webflow,
-              and other CMS platforms. Each site focuses on clean design,
-              performance, and user experience.
-            </p>
-            <a
-              href="mailto:angelomark31@gmail.com"
-              className="bg-customGreen text-white mt-2 w-full sm:w-1/2 lg:w-1/4 py-3 px-6 rounded-md font-montserrat text-center"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
+      <Header />
 
-        {/* Project grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map(({ id, title, image, url }) => (
-            <a
-              key={id}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200"
-            >
-              <div className="relative w-full h-60 overflow-hidden rounded-t-xl">
-                <img
-                  src={image}
-                  alt={title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6 flex justify-between items-center bg-white rounded-b-xl">
-                <h3 className="text-xl font-bold text-customGreen">{title}</h3>
-                <div className="w-10 h-10 rounded-full border border-customGreen flex items-center justify-center text-customGreen group-hover:text-white group-hover:bg-customGreen transition-colors duration-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </a>
+      <section className="bg-white py-36 px-5 lg:px-10">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl font-bold uppercase mb-12">Projects</h2>
+
+          {projectGroups.map((group, index) => (
+            <div key={index} className="mb-16">
+              <h3 className="text-2xl font-semibold text-customGreen mb-6">
+                {group.platform}
+              </h3>
+
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {group.projects.map((project, i) => (
+                  <li key={i}>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-4 border border-gray-200 rounded-lg hover:bg-customGreen hover:text-white transition"
+                    >
+                      {project.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
-      </div>
-    </section>
-    
+      </section>
     </>
-    
   );
 }
